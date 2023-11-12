@@ -1,5 +1,6 @@
-import PropTypes from 'prop-types';
-import user from '../../user.json';
+// import PropTypes from 'prop-types';
+// import user from '../assets/user.json';
+import user from '../../user.json'
 
 export const Stats = () => {
   return (

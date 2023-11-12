@@ -1,5 +1,6 @@
 import { Profile } from "./Profile/Profile";
-import { Stats } from "./ProfileStats/ProfileStats";
+// import { Statistics } from "./Statistics/Statistics";
+
 
 export const App = () => {
   return (
@@ -13,9 +14,8 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      {/* React homework template */}
       <Profile />
-      {/* <Stats /> */}
+      {/* <Statistics /> */}
     </div>
   );
 };

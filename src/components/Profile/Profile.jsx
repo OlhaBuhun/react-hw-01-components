@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import user from '../../user.json';
 import { Stats } from 'components/ProfileStats/ProfileStats';
 

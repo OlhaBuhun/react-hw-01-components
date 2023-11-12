@@ -1,30 +1,32 @@
-import PropTypes from 'prop-types';
-import data from '../../data.json';
+// import PropTypes from 'prop-types';
+// import data from '../assets/data.json';
+
+// const TitleStatististics = (title) => {
+//   return (
+//     <h2 className="title">{title}</h2>
+//   )
+// }
+
+// // const Stats = () => {
+// //   return ((data) => {
+// //     key={data.id}
+// //    <ul>
+// //     {
+// //       data.map(() => <li className="item">
+// //       <span className="label">{data.label}</span>
+// //       <span className="percentage">{data.percentage}</span>
+// //     </li>)
+// //     }
+// //    </ul>
+// //   })
+// // }
 
 
-export const Statilistics = ({id, label, percentage}) => {
-  return (   
-  <section className="statistics">
-  <h2 className="title">Upload stats</h2>
-
-  <ul className="stat-list">
-    <li className="item">
-      <span className="label">.docx</span>
-      <span className="percentage">4%</span>
-    </li>
-    <li className="item">
-      <span className="label">.mp3</span>
-      <span className="percentage">14%</span>
-    </li>
-    <li className="item">
-      <span className="label">.pdf</span>
-      <span className="percentage">41%</span>
-    </li>
-    <li className="item">
-      <span className="label">.mp4</span>
-      <span className="percentage">12%</span>
-    </li>
-  </ul>
-  </section>
-  )
-}
+// export const Statistics = ({title, stats}) => {
+//   return (   
+//   <section className="statistics">
+//   <TitleStatististics />
+//   {/* <Stats /> */}
+//   </section>
+//   )
+// }
