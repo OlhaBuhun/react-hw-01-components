@@ -1,22 +1,41 @@
 // import PropTypes from 'prop-types';
-// import user from '../assets/user.json';
-import user from '../../user.json'
+// import user from '../../user.json';
+import { Profile } from 'components/Profile/Profile';
+import { Stats } from 'components/Stats/Stats';
 
-export const Stats = () => {
+export const ProfileStats = ({props}) => {
   return (
-    <ul className="stats">
-      <li>
-        <span className="label">Followers</span>
-        <span className="quantity">{user.stats.followers}</span>
-      </li>
-      <li>
-        <span className="label">Views</span>
-        <span className="quantity">{user.stats.views}</span>
-      </li>
-      <li>
-        <span className="label">Likes</span>
-        <span className="quantity">{user.stats.likes}</span>
-     </li>
-    </ul> 
+    <div className="profile">
+    <Profile
+      avatar={props.avatar} 
+      username={props.username}
+      tag={props.tag} 
+      location={props.location}
+     />
+    <Stats
+    followers={props.stats.followers} 
+    views={props.stats.views}
+    likes={props.stats.likes}
+     />
+    </div>
   )
 }
+
+
+// ProfileStats.propTypes = {
+//   user: PropTypes.arrayOf(
+//     PropTypes.exact({
+//       avatar: PropTypes.string.isRequired,    
+//       username: PropTypes.string.isRequired,    
+//       tag: PropTypes.string.isRequired,    
+//       location: PropTypes.string.isRequired
+//       stats: PropTypes.arrayOf(
+//         PropTypes.exact({
+//            followers: PropTypes.number.isRequired,    
+//            views: PropTypes.number.isRequired,    
+//            likes: PropTypes.number.isRequired
+//         })
+//       )
+//     })
+//   )
+// }

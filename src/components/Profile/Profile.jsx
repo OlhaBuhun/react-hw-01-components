@@ -1,25 +1,26 @@
-// import PropTypes from 'prop-types';
-import user from '../../user.json';
-import { Stats } from 'components/ProfileStats/ProfileStats';
+import PropTypes from 'prop-types';
 
-// console.log(user);
 
-export const Profile =() => {
+export const Profile =({avatar, username, tag, location}) => {
   return (
     <div className="profile">
       <div className="description">
       <img
-      src={user.avatar}
-      alt={user.username}
+      src={avatar}
+      alt={username}
       className="avatar"
       />
-      <p className="name">{user.username}</p>
-      <p className="tag">@{user.tag}</p>
-      <p className="location">{user.location}</p>
+      <p className="name">{username}</p>
+      <p className="tag">@{tag}</p>
+      <p className="location">{location}</p>
     </div>
-      <Stats />
 </div>
   )
 }
 
-console.log(Profile());
+Profile.propTypes = {
+  avatar: PropTypes.string.isRequired,    
+  username: PropTypes.string.isRequired,    
+  tag: PropTypes.string.isRequired,    
+  location: PropTypes.string.isRequired
+}

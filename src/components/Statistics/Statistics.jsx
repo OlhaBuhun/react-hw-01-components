@@ -18,10 +18,10 @@ const CardStats = ({id, label, percentage}) => {
   )
 }
 
-const Stats =({events}) => {
+const Stats =({event}) => {
   return (
     <ul >
-      {events.map(({id, label, percentage}) => (
+      {event.map(({id, label, percentage}) => (
         <CardStats 
         key={id}
         label={label}
@@ -34,11 +34,11 @@ const Stats =({events}) => {
 }
 
 
-export const Statistics = ({title, stats}) => {
+export const Statistics = ({text, event}) => {
   return (   
   <section className="statistics">
-  <TitleStatististics text ="Upload stats"/>
-  <Stats events={data}/>
+  <TitleStatististics text='Upload stats' />
+  <Stats event={data}/>
   </section>
   )
 }

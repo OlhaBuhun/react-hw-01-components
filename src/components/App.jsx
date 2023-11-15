@@ -1,5 +1,10 @@
-// import { Profile } from "./Profile/Profile";
-import { Statistics } from "./Statistics/Statistics";
+import { FriendList } from "./FriendList/FriendList";
+// import { ProfileStats } from "./ProfileStats/ProfileStats";
+// import { Statistics } from "./Statistics/Statistics";
+// import friends from '../friends.json';
+// import user from '../user.json';
+// import data from '../data.json';
+// import friends from 'friends.json'
 
 
 export const App = () => {
@@ -14,8 +19,9 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      {/* <Profile /> */}
-      <Statistics />
+     {/* <ProfileStats props={user}/> */}
+      {/* <Statistics  />  */}
+      <FriendList />
     </div>
   );
 };
