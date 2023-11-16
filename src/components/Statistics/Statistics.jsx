@@ -9,7 +9,7 @@ const TitleStatististics = ({text}) => {
   )
 }
 
-const CardStats = ({id, label, percentage}) => {
+const CardStats = ({label, percentage}) => {
   return (
     <li className="item">
       <span className="label">{label}</span>
