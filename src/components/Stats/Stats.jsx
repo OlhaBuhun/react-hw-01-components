@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
+import { StatsStyle } from './Stats.styled';
 
 export const Stats = ({followers, views, likes}) => {
   return (
-    <ul className="stats">
+    <StatsStyle >
       <li>
         <span className="label">Followers</span>
         <span className="quantity">{followers}</span>
@@ -15,7 +16,7 @@ export const Stats = ({followers, views, likes}) => {
         <span className="label">Likes</span>
         <span className="quantity">{likes}</span>
      </li>
-    </ul> 
+    </StatsStyle> 
   )
 }
 

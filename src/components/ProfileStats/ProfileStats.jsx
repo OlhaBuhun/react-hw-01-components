@@ -2,10 +2,11 @@
 // import user from '../../user.json';
 import { Profile } from 'components/Profile/Profile';
 import { Stats } from 'components/Stats/Stats';
+import { ProfileStyle } from './ProfileStats.styled';
 
 export const ProfileStats = ({props}) => {
   return (
-    <div className="profile">
+    <ProfileStyle className="profile">
     <Profile
       avatar={props.avatar} 
       username={props.username}
@@ -17,7 +18,7 @@ export const ProfileStats = ({props}) => {
     views={props.stats.views}
     likes={props.stats.likes}
      />
-    </div>
+    </ProfileStyle>
   )
 }
 
