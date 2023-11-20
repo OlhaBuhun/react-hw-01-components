@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import { Item, Statys } from './FriendListItem.styled';
 
-  export const FriendListItem = ({avatar, name, isOnline}) => {
+  export const FriendListItem = ({avatar, name, isOnline} ) => {
     return (
-      <li className="item">
-        <span className="status">{isOnline}</span>
+      <Item >
+        <Statys isOnline={isOnline}></Statys>
         <img 
         className="avatar" 
         src={avatar} 
@@ -11,9 +12,10 @@ import PropTypes from 'prop-types';
         width="48" 
         />
         <p className="name">{name}</p>
-      </li>
+      </Item>
     )
 }
+
 
 
 FriendListItem.propTypes = {

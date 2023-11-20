@@ -4,8 +4,9 @@ import data from '../../data.json';
 // console.log(data);
 
 const TitleStatististics = ({text}) => {
+  const title = true;
   return (
-    <h2 className="title">{text}</h2>
+    <h2 className="title">{title && text}</h2>
   )
 }
 

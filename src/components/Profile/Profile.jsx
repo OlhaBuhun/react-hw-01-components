@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types';
+import { ProfileStyleContainer } from './Profile.styled';
+
 
 
 export const Profile =({avatar, username, tag, location}) => {
   return (
-    <div className="profile">
+    <ProfileStyleContainer className="profile">
       <div className="description">
       <img
       src={avatar}
@@ -14,7 +16,7 @@ export const Profile =({avatar, username, tag, location}) => {
       <p className="tag">@{tag}</p>
       <p className="location">{location}</p>
     </div>
-</div>
+</ProfileStyleContainer>
   )
 }
 
