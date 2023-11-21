@@ -1,7 +1,7 @@
 // import { FriendList } from "./FriendList/FriendList";
-// import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
+import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
 // import { ProfileStats } from "./ProfileStats/ProfileStats";
-import { Statistics } from "./Statistics/Statistics";
+// import { Statistics } from "./Statistics/Statistics";
 // import user from '../user.json';
 // import transaction from '../transaction.json';
 // import data from '../data.json';
@@ -21,9 +21,9 @@ export const App = () => {
       // }}
     >
      {/* <ProfileStats props={user}/> */}
-      <Statistics  /> 
+      {/* <Statistics  />  */}
       {/* <FriendList /> */}
-      {/* <TransactionHistory /> */}
+      <TransactionHistory />
     </div>
   );
 };

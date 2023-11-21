@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
 import transaction from '../../transactions.json';
+import { CardTransactionStyled, TbodyStyled, TheadStyled, TransactionHistoryStyled } from './TransactionHistory.styled';
 
 const Thead =() => {
   return (
     <thead>
     <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
+      <TheadStyled>Type</TheadStyled>
+      <TheadStyled>Amount</TheadStyled>
+      <TheadStyled>Currency</TheadStyled>
     </tr>
   </thead>
   )
@@ -15,11 +16,11 @@ const Thead =() => {
 
 const CardTransaction = ({type, amount, currency}) => {
   return (
-    <tr>
-        <td>{type}</td>
-        <td>{amount}</td>
-        <td>{currency}</td>
-      </tr>
+    <TbodyStyled>
+        <CardTransactionStyled>{type}</CardTransactionStyled>
+        <CardTransactionStyled>{amount}</CardTransactionStyled>
+        <CardTransactionStyled>{currency}</CardTransactionStyled>
+      </TbodyStyled>
   )
 }
 
@@ -40,10 +41,10 @@ const Tbody = ({items}) => {
 
 export const TransactionHistory = () => {
   return (
-    <table className="transaction-history">
+    <TransactionHistoryStyled >
      <Thead /> 
      <Tbody items={transaction}/>
-    </table>
+    </TransactionHistoryStyled>
   )
 }
 
