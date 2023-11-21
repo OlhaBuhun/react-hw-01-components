@@ -23,4 +23,12 @@ export const Statys = styled.span `
   border-radius: 50%;
   height: 16px;
 `
+export const AvatarFriend = styled.img `
+width: 48px;
+/* border: 13px;
+/* border-radius: 50%; */
+background-color: yellow;
+padding: 5px;
+border-radius: 50%;
+`
 

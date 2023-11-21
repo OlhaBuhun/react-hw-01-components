@@ -1,27 +1,28 @@
 import PropTypes from 'prop-types';
 import data from '../../data.json';
+import { CardStatsStyled, StatisticsStyled, StatsStyled, TitleStatististicsStyled } from './Statistics.styled';
 
 // console.log(data);
 
 const TitleStatististics = ({text}) => {
   const title = true;
   return (
-    <h2 className="title">{title && text}</h2>
+    <TitleStatististicsStyled >{title && text}</TitleStatististicsStyled>
   )
 }
 
 const CardStats = ({label, percentage}) => {
   return (
-    <li className="item">
+    <CardStatsStyled >
       <span className="label">{label}</span>
       <span className="percentage">{percentage}%</span>
-    </li>
+    </CardStatsStyled>
   )
 }
 
 const Stats =({event}) => {
   return (
-    <ul >
+    <StatsStyled >
       {event.map(({id, label, percentage}) => (
         <CardStats 
         key={id}
@@ -29,7 +30,7 @@ const Stats =({event}) => {
         percentage={percentage}
         />
       ))}
-    </ul>
+    </StatsStyled>
   )
 
 }
@@ -37,10 +38,10 @@ const Stats =({event}) => {
 
 export const Statistics = ({text, event}) => {
   return (   
-  <section className="statistics">
+  <StatisticsStyled >
   <TitleStatististics text='Upload stats' />
   <Stats event={data}/>
-  </section>
+  </StatisticsStyled>
   )
 }
 
