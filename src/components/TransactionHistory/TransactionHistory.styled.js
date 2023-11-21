@@ -12,16 +12,19 @@ export const TheadStyled = styled.th `
 	padding: 5px;
 	background: #efefef;
 	border: 1px solid #dddddd;
+  font-size: 25px;
 `
 
 export const CardTransactionStyled = styled.td `
   padding: 5px 10px;
 	border: 1px solid #eee;
 	text-align: left;
+  text-transform: capitalize;
 `
 
 export const TbodyStyled = styled.tr `
   /* background-color: grey; */
+  
   &:nth-child(odd){
     background: #fff;
   };
