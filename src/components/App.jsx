@@ -1,11 +1,7 @@
-// import { FriendList } from "./FriendList/FriendList";
+import { FriendList } from "./FriendList/FriendList";
 import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
-// import { ProfileStats } from "./ProfileStats/ProfileStats";
-// import { Statistics } from "./Statistics/Statistics";
-// import user from '../user.json';
-// import transaction from '../transaction.json';
-// import data from '../data.json';
-// import friends from 'friends.json'
+import { Profile } from "./Profile/Profile";
+import { Statistics } from "./Statistics/Statistics";
 
 
 export const App = () => {
@@ -20,9 +16,9 @@ export const App = () => {
       //   color: '#010101'
       // }}
     >
-     {/* <ProfileStats props={user}/> */}
-      {/* <Statistics  />  */}
-      {/* <FriendList /> */}
+      <Profile />
+      <Statistics  /> 
+      <FriendList />
       <TransactionHistory />
     </div>
   );

@@ -14,16 +14,16 @@ const TitleStatististics = ({text}) => {
 const CardStats = ({label, percentage}) => {
   return (
     <CardStatsStyled >
-      <span className="label">{label}</span>
-      <span className="percentage">{percentage}%</span>
+      <span >{label}</span>
+      <span >{percentage}%</span>
     </CardStatsStyled>
   )
 }
 
-const Stats =({event}) => {
+const Stats =({stats}) => {
   return (
     <StatsStyled >
-      {event.map(({id, label, percentage}) => (
+      {stats.map(({id, label, percentage}) => (
         <CardStats 
         key={id}
         label={label}
@@ -36,11 +36,11 @@ const Stats =({event}) => {
 }
 
 
-export const Statistics = ({text, event}) => {
+export const Statistics = ({text, stats}) => {
   return (   
   <StatisticsStyled >
   <TitleStatististics text='Upload stats' />
-  <Stats event={data}/>
+  <Stats stats={data}/>
   </StatisticsStyled>
   )
 }
