@@ -1,4 +1,4 @@
-import { FriendList } from "./FriendList/FriendList";
+// import { FriendList } from "./FriendList/FriendList";
 import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
 import { Profile } from "./Profile/Profile";
 import { Statistics } from "./Statistics/Statistics";
@@ -18,7 +18,7 @@ export const App = () => {
     >
       <Profile />
       <Statistics  /> 
-      <FriendList />
+      {/* <FriendList /> */}
       <TransactionHistory />
     </div>
   );
