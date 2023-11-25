@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/OlhaBuhun/react-hw-01-components/static/css/main.7acaea2f.css",
-    "main.js": "/OlhaBuhun/react-hw-01-components/static/js/main.d848f425.js",
+    "main.js": "/OlhaBuhun/react-hw-01-components/static/js/main.413b7845.js",
     "index.html": "/OlhaBuhun/react-hw-01-components/index.html",
     "main.7acaea2f.css.map": "/OlhaBuhun/react-hw-01-components/static/css/main.7acaea2f.css.map",
-    "main.d848f425.js.map": "/OlhaBuhun/react-hw-01-components/static/js/main.d848f425.js.map"
+    "main.413b7845.js.map": "/OlhaBuhun/react-hw-01-components/static/js/main.413b7845.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.d848f425.js"
+    "static/js/main.413b7845.js"
   ]
 }
