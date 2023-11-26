@@ -31,7 +31,7 @@ export const CardStatsStyled = styled.li `
 
     span {
       margin-bottom: 5px;
-      font-size: 20px;
+      font-size: 16px;
     }
 `
 
