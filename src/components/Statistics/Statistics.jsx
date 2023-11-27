@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
-import data from '../../data.json';
 import { CardStatsStyled, StatisticsStyled, StatsStyled, TitleStatististicsStyled } from './Statistics.styled';
 
-// console.log(data);
 
-const TitleStatististics = ({text}) => {
-  const title = true;
+const TitleStatististics = ({title}) => {
   return (
-    <TitleStatististicsStyled >{title && text}</TitleStatististicsStyled>
+    <>
+    {title.length > 0 && (<TitleStatististicsStyled >{title}</TitleStatististicsStyled>)}
+    </>
   )
 }
 
@@ -36,11 +35,11 @@ const Stats =({stats}) => {
 }
 
 
-export const Statistics = ({text, stats}) => {
+export const Statistics = ({title, stats}) => {
   return (   
   <StatisticsStyled >
-  <TitleStatististics text='Upload stats' />
-  <Stats stats={data}/>
+    <TitleStatististics title={title}/>
+    <Stats stats={stats}/>
   </StatisticsStyled>
   )
 }
