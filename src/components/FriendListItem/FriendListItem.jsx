@@ -9,7 +9,7 @@ import { AvatarFriend, Item, Statys } from './FriendListItem.styled';
         src={avatar} 
         alt={name} 
         />
-        <p className="name">{name}</p>
+        <p >{name}</p>
       </Item>
     )
 }

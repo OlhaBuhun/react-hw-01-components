@@ -54,7 +54,7 @@ CardStats.propTypes = {
 };
 
 Stats.propTypes = {
-  events: PropTypes.arrayOf(
+  stats: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
