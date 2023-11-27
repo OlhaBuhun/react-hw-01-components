@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import transaction from '../../transactions.json';
 import { CardTransactionStyled, TbodyStyled, TheadStyled, TransactionHistoryStyled } from './TransactionHistory.styled';
 
 const Thead =() => {
@@ -39,11 +38,11 @@ const Tbody = ({items}) => {
   )
 }
 
-export const TransactionHistory = () => {
+export const TransactionHistory = ({items}) => {
   return (
     <TransactionHistoryStyled >
      <Thead /> 
-     <Tbody items={transaction}/>
+     <Tbody items={items}/>
     </TransactionHistoryStyled>
   )
 }
